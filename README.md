@@ -37,8 +37,8 @@ Porém devido ao Windows Defender não da para realizar isso diretamente.
 
 - Adicionando um usuário e senha (caso não tenha um usuário válido, tente adicionar apenas o USERNAME como guest)
 ```python
-USERNAME = 'Bob'
-PASSWORD = 'P@ss'
+USERNAME = 'guest'
+PASSWORD = ''
 ```
 
 - Alterações para criar um usuário com acesso de Autoridade
