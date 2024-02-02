@@ -4,7 +4,7 @@ Script que explora manualmente a vulnerabilidade MS17-010 (CVE 2017-0144 ) e fun
 
 **Exploit tirado do exploit-db - [42315](https://www.exploit-db.com/exploits/42315])**
 
-**Testado no Windows 2016 Server**
+**Testado no Windows Server 2016 Standard Evaluation 14393**
 
 Criei esse respositório pois quando precisei, tive dificuldade para executar o exploit (baixar depedências) e entender o código, sendo assim decidi criar esse repositório para facilitar o pentest caso alguém se depare com o mesmo problema que eu
 
@@ -35,6 +35,11 @@ Porém devido ao Windows Defender não da para realizar isso diretamente.
 *A função **service_exec** (linha 923) é onde se localiza o comando que será executado como é mostrado abaixo*
 *A função **smb_send_file** (linha 922) envia um arquivo local para a máquina alvo*
 
+- Adicionando um usuário e senha (caso não tenha um usuário válido, tente adicionar apenas o USERNAME como guest)
+```python
+USERNAME = 'Bob'
+PASSWORD = 'P@ss'
+```
 
 - Alterações para criar um usuário com acesso de Autoridade
 ```python 
