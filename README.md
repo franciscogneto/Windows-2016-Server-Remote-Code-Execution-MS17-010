@@ -62,6 +62,15 @@ $ python2.7 exploit.py <target ip>
 ```shell
 netsh advfirewall set currentprofile state off
 ```
+- Comando para desabilitar o Windows Defender
+```shell
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 1 /f
+```
+- Comando para habilitar o Windows Defender
+```shell
+reg add "HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\Windows Defender" /v DisableAntiSpyware /t REG_DWORD /d 0 /f
+```
+
 - Comando para habilitar a porta 3389 no firewall
 ```shell
 netsh advfirewall firewall add rule name="rpd" protocol=TCP dir=in localport=3389 action=allow
