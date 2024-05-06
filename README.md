@@ -2,7 +2,7 @@
 
 Script que explora manualmente a vulnerabilidade MS17-010 (CVE 2017-0144 ) e funciona nos sistemas: Windows 7 / 8.1 / 2008 R2 /2012 R2 / 2016 R2 / 2016 Server
 
-**Exploit tirado do exploit-db - [42315](https://www.exploit-db.com/exploits/42315])**
+**Exploit tirado do exploit-db - [42315](https://www.exploit-db.com/exploits/42315)**
 
 **Testado no Windows Server 2016 Standard Evaluation 14393**
 
